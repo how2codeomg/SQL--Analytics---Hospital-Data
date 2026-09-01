@@ -49,3 +49,21 @@ INNER JOIN doctors
 ON appointments.doctor_id = doctors.doctor_id
 GROUP BY Doctor_Name
 ORDER BY Revenue DESC;
+
+--Patient and appointments--
+SELECT patients.first_name ||" "|| patients.last_name AS Patient_Name, patients.gender, count(*) AS Total_Appointments
+FROM appointments
+INNER JOIN patients ON appointments.patient_id = patients.patient_id
+--WHERE patients.gender = "F"
+GROUP BY Patient_Name
+ORDER BY Total_Appointments DESC
+LIMIT 10;
+
+--Patients whom not shown up--
+SELECT patients.first_name ||" "|| patients.last_name AS Patient_Name, patients.gender,
+	   count(*) AS Missed
+FROM appointments
+INNER JOIN patients ON appointments.patient_id = patients.patient_id
+WHERE status = "No-show"
+GROUP BY Patient_Name
+ORDER BY Missed DESC;
