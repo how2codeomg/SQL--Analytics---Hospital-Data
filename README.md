@@ -1,6 +1,6 @@
 # SQL_Project_Hospital_Data_Analysis
 
-This project aims to analyze hospital data using SQL query to call data as conditions given in accord to the
+This project aims to analyze hospital data using SQL query to call data as conditions given 
 
 ## Acknowledgement
 It is guided by developer mentor in this video, I could not succeed without their aid. Thus, I am grateful and would like to thank them for contribution for this kind guidance.   
