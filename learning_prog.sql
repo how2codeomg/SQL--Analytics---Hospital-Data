@@ -26,19 +26,19 @@ WHERE CustomerId >= 11;
 
 /* Lesson 2 */
 
-/*INSERT into customers --insert into (table name)
-VALUES(60, "Supichaya", "Kritpidhayaburana", "JC", "111/4 Bangduen", )*/
--- INSERT INTO customers(FirstName, LastName, Email, PostalCode) --insert these three into table customers
--- VALUES("Supichaya", "Kritpidhayaburana", "mymail@gmail.com",555)
+INSERT into customers --insert into (table name)
+VALUES(60, "Supichaya", "Kritpidhayaburana", "JC", "111/4 Bangduen", )
+INSERT INTO customers(FirstName, LastName, Email, PostalCode) --insert these three into table customers
+VALUES("Supichaya", "Kritpidhayaburana", "mymail@gmail.com",555)
 
 /*UPDATE SET WHERE DELETE*/
--- UPDATE customers
--- SET FirstName = "Kalyarak"
--- , LastName = "Nimsuk"
--- WHERE CustomerId = 61; --where condition is crucial as update function is sentitive 
--- 
--- DELETE FROM customers
--- Where CustomerId  > 62 ; --dont forget to state where condition
+UPDATE customers
+SET FirstName = "Kalyarak"
+, LastName = "Nimsuk"
+WHERE CustomerId = 61; --where condition is crucial as update function is sentitive 
+
+DELETE FROM customers
+Where CustomerId  > 62 ; --dont forget to state where condition
 
 
 /* Lesson 3 */
@@ -81,6 +81,7 @@ ORDER BY SUMMinutes DESC;
 /* Lesson 4*/
 
 /*SQL Operator*/--part of condtions USED inside WHERE
+
 --OR--
 SELECT * FROM employees
 WHERE Title = "General Manager" 
@@ -170,5 +171,3 @@ END AS Results --name of
 /*CASE treated as a field in SELECT section*/
 FROM invoices; 
 
---SUBQUERY--
-SELECT 
