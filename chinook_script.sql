@@ -1,4 +1,5 @@
 /**** ฺBORN TO DEV SQL COURSE ****/
+/*using chinook database as attached*/
 
 /* Lesson 1 */
 
